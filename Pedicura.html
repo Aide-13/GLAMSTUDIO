@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/Imagenes/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/pedicura.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/whatsapp.css">
+    <title>Servicios - Pedicura</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-primary  fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="/Imagenes/logo.png" width="45px" alt=""></a>
+        <button class="navbar-toggler text-light" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto me-3 ">
+            <li class="barra nav-item p-3"><a class="nav-link text-white" href="index.html">Inicio</a></li>
+            <li class="barra nav-item p-3"><a class="nav-link text-white" href="quienes_somos.html">Quienes Somos</a></li>
+            <li class="barra nav-item p-3"><a class="nav-link text-white" href="Servicios.html">Nuestros Servicios</a></li>
+          </ul>
+          <button class=" btn btn-light nav-item" id="citas"> <a class="nav-link" href="agendar_cita.html">Reserva una Cita</a></button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid carta">
+      <div class="row d-flex justify-content-between">
+        <div class="col-auto px-0 mx-0 ">
+          <img src="/Imagenes/Pedicure.png" alt="" width="750px" class="img-fluid manos">
+        </div>
+        <div class="col px-5 text-center">
+          <p class="titulo pt-3">Pedicura</p>
+          <div class="col text-center ">
+            <p class="text-center fs-5">
+                Dale a tus pies el cuidado 
+                que merecen con nuestra pedicura 
+                profesional, que combina limpieza, 
+                hidratación y un toque de glamour único.
+            </p>
+          </div>
+          <div class="col-auto text-center">
+            <a href="/agendar_cita.html"><button class="btn btn-light boton">Agendar Cita</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row mt-5 mx-5">
+            <div class="col">
+                <div class="text-center subtitulo">Sales de Baño</div>
+                <div class="container mt-5">
+                    <div class="circle">
+                        <img class="item" src="/Imagenes/Pies/exfoliante_1.png" alt="Opción 1" onclick="selectImage(this)">
+                        <img class="item" src="/Imagenes/Pies/exfoliante_2.png" alt="Opción 2" onclick="selectImage(this)">
+                        <img class="item" src="/Imagenes/Pies/exfoliante_3.png" alt="Opción 3" onclick="selectImage(this)">
+                        <img class="item" src="/Imagenes/Pies/exfoliante_4.png" alt="Opción 4" onclick="selectImage(this)">
+                        <img class="item" src="/Imagenes/Pies/exfoliante_5.png" alt="Opción 5" onclick="selectImage(this)">
+                    </div>
+                    <div class="center">
+                        <img id="centerImage" src="/Imagenes/Pies/exfoliante_1.png" alt="Centro">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col">
+                    <div class="text-center subtitulo mt-5">Kneipp Sales de Baño para Pies</div>
+                    <p class="text-center">Con salmuera termal natural pura, estas sales limpian suavemente los pies 
+                    cansados y estresados, desodorizan y suavizan las callosidades. El aroma 
+                    cítrico con aceite esencial de naranja revitaliza los sentidos
+                    </p>
+                </div>
+                <div class="row">
+                    <img src="/Imagenes/Pies/pedicura_1.png" alt="Pedicura_1" class="img-fluid" width="200px">
+                </div>
+            </div>
+            <hr class="m-0 linea">
+        </div>
+
+        <div class="row p-0">
+            <div class="col p-0">
+                <img src="/Imagenes/Pies/pedicura_2.png" alt="Pedicura_2" width="500px" class="img-fluid">
+            </div>
+            <div class="col px-5">
+                <div class="text-center subtitulo">Tratamiento de Pedicura</div>
+                <p class="texto px-5">Descubre nuestros exclusivos tratamientos de spa para pies: 
+                    baños aromáticos, masajes relajantes y mascarillas hidratantes 
+                    que dejarán tus pies suaves, renovados y completamente relajados. 
+                    Agenda tu cita y vive la experiencia de un cuidado profesional.
+                </p>
+                <p class="texto px-5">Es una experiencia completa que combina estética y relajación. Incluye:</p>
+                <ul class="texto px-5">
+                    <li>Baño de pies con sales aromáticas o aceites esenciales.</li>
+                    <li>Exfoliación para eliminar células muertas.</li>
+                    <li>Tratamiento de callosidades y durezas.</li>
+                    <li>Masaje relajante que mejora la circulación.</li>
+                    <li>Aplicación de cremas hidratantes.</li>
+                    <li>Esmaltado de uñas</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://wa.me/5517746761?text=Hola" class="float-wa" target="_blank">
+    <i class="fa fa-whatsapp" style="margin-top:16px;"></i>
+</a>
+
+    <footer class="pt-4 text-white" style="background: #000000;">
+      <div class="container-fluid ">
+      
+        <div class="text-center ">
+          <p class="mb-2 fw-semibold">Todos los derechos son reservados</p>
+        </div>
+
+        <div class="d-flex justify-content-evenly flex-wrap">
+          
+          <div class="col-auto">
+            <img src="/Imagenes/icono.png" alt="logo" width="100px">
+            <a href="#" class="text-decoration-none fw-bold" style="color: #C6A04F;">J&G GLAMSTUDIO</a>
+          </div>
+          
+          <div class="vr d-none d-md-block" style="height: 100px;"></div>
+          
+          <div class="col-auto text-center">
+            <div class="col">
+              <a href="/index.html" class="text-decoration-none text-white"><p class="mb-1">Inicio</p></a>
+              <a href="/quienes_somos.html" class="text-decoration-none text-white"><p class="mb-1">Quienes Somos</p></a>
+            </div>
+            <div class="row">
+              <a href="/Servicios.html" class="text-decoration-none text-white"><p class="mb-1">Nuestros Servicios</p></a>
+              <a href="/agendar_cita.html" class="text-decoration-none text-white"><p>Reserva tu cita</p></a>
+            </div>
+          </div>
+          
+          <div class="vr d-none d-md-block" style="height: 100px;"></div>
+          
+          <div class="col-auto">
+            <a href="#" class="text-decoration-none text-white"><p><img src="/Imagenes/whatsapp.png" alt="whatsapp" width="20px" class="mx-2">Tel. 55 1774 6761</p></a> 
+            <a href="#" class="text-decoration-none text-white"><p><img src="/Imagenes/instagram.png" alt="instagram" width="20px" class="mx-2">jglam_studio</p></a>
+            <a href="#" class="text-decoration-none text-white"><p><img src="/Imagenes/facebook.png" alt="facebook" width="20px" class="mx-2">J&Glam Studio</p></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+</body>
+<script src="/js/bootstrap.bundle.js"></script>
+<script src="/js/foot.js"></script>
+<script src="/js/Manicura.js"></script>
+</html>
+

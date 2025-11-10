@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  user-select: none;
+}
+
+.navbar{
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0;
+}
+
+.container-fluid{
+  margin: 0;
+}
+
+.barra:hover{
+  background: #C6A04F;
+  margin: 0;
+}
+
+#citas{
+  border-radius: 50%;
+}
+
+#citas:hover{
+  background-color: #342b1e;
+  color: white;
+  border: 1px solid #342b1e;
+
+}
+
+.titulo{
+    font-family: "Playfair Display", serif;
+    color: #ffffff;
+    font-size: 1000%;
+    text-shadow:  2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.subtitulo{
+    font-family: "Playfair Display", serif;
+    font-size: 200%;
+}
+
+.seccion{
+  font-size: 30px;
+}
+
+.fuente{
+  font-family: "Poppins", sans-serif;
+}
+
+.botones{
+  background-color: #C6A04F;
+  color: #ffffff;
+}

@@ -1,0 +1,251 @@
+body {
+  font-family: "Raleway", sans-serif;
+  user-select: none;
+  /*background-color: #C6A04F;*/
+}
+
+.navbar{
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0;
+  transition: top 0.5s ease;
+}
+
+.container-fluid{
+  margin: 0;
+}
+
+.barra:hover{
+  background: #C6A04F;
+  margin: 0;
+}
+
+#citas{
+  border-radius: 50px;
+}
+
+#citas:hover{
+  background-color: #342b1e;
+  color: white;
+  border: 1px solid #342b1e;
+
+}
+
+/*sección 1*/
+
+.seccion_1{
+    display: flex;
+    flex-direction: column;
+    background: #bb9034;
+}
+
+.contenido_1{
+    margin-top: 75px;
+}
+
+.titulo_1{
+    font-family: "Playfair Display", serif;
+    color: white;
+    font-size: 110px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.subtitulo_1{
+    font-family: "Playfair Display", serif;
+    color: black;
+    font-size: 25px;
+}
+
+/*sección 2*/
+
+.seccion_2{
+    display: flex;
+    flex-direction: row;
+    margin-left: 55px;
+    margin-right: 40px;
+}
+
+.contenido_2{
+    margin-top: 110px;
+}
+
+.titulo_2{
+    font-family: "Poppins", sans-serif;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.texto_1{
+    margin-left: 0;
+    margin-right: 35px;
+    text-align: justify;
+    line-height: 1.5;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+/*Sección 3*/
+.seccion_3{
+    display: flex;
+    flex-direction: row;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.mision{
+    width: 50%;
+    background: #f4f4f4;
+    margin-right: 10px;
+}
+
+.vision{
+    width: 50%;
+    background: #f4f4f4;
+    margin-left: 10px;
+}
+
+.titulo_3{
+    font-family: "Poppins", sans-serif;
+    color: black;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.texto_2{
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: justify;
+    line-height: 1.5;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+hr{
+    background: #f4f4f4;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*Sección 3*/
+
+.titulo_4{
+    font-family: "Poppins", sans-serif;
+    color: black;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.texto_3{
+    text-align: center;
+    line-height: 1.5;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    margin: 0px 150px 25px 150px;
+}
+
+/*sección 4*/
+
+.titulo_5{
+    font-family: "Poppins", sans-serif;
+    color: black;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+.metas{
+    display: flex;
+    flex-direction: column;
+    margin-left: 55px;
+    margin-right: 55px;
+}
+
+.metas_1{
+    display: flex;
+    flex-direction: row;
+}
+
+.metas_2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.meta_1{
+    background: #b6b7b7;
+    border-radius: 8px;
+    margin-right: 7px;
+    width: 800px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.meta_2{
+    background: #e1b00f;
+    border-radius: 8px;
+    margin-right: 7px;
+    width: 500px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.meta_3{
+    background: #d3be89;
+    border-radius: 8px;
+    margin-right: 7px;
+    width: 650px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.meta_4{
+    background: #342e1b;
+    border-radius: 8px;
+    margin-right: 7px;
+    width: 700px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.meta_5{
+    background: #6d6060;
+    border-radius: 8px;
+    margin-right: 7px;
+    width: 850px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.meta_6{
+    background: #d4af37;
+    border-radius: 8px;
+    margin-right: 7px;
+    width: 550px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.texto_4{
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 0px 35px 0px 35px;
+}
+
+.imagen_2{
+    margin: 0px 70px 0px 70px;
+}

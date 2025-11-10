@@ -1,0 +1,30 @@
+body {
+  font-family: "Raleway", sans-serif;
+  user-select: none;
+  /*background-color: #C6A04F;*/
+}
+
+.navbar{
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0;
+}
+
+.container-fluid{
+  margin: 0;
+}
+
+.barra:hover{
+  background: #C6A04F;
+  margin: 0;
+}
+
+#citas{
+  border-radius: 50px;
+}
+
+#citas:hover{
+  background-color: #342b1e;
+  color: white;
+  border: 1px solid #342b1e;
+
+}
