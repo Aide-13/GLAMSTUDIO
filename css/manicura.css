@@ -33,7 +33,7 @@ body {
 
 .titulo{
     font-family: "Playfair Display", serif;
-    font-size: 1000%;
+    font-size: 100px;
     font-weight: bold;
 }
 
@@ -196,5 +196,8 @@ body {
 
   .center {
     width: 55%;
+  }
+  .titulo{
+    font-size: 50px;
   }
 }

@@ -35,7 +35,7 @@ body {
 .seccion_1{
     display: flex;
     flex-direction: column;
-    background: #bb9034;
+    background: #171614;
 }
 
 .contenido_1{
@@ -52,7 +52,7 @@ body {
 
 .subtitulo_1{
     font-family: "Playfair Display", serif;
-    color: black;
+    color: #f4f4f4;
     font-size: 25px;
 }
 
@@ -173,7 +173,7 @@ hr{
 }
 
 .meta_1{
-    background: #b6b7b7;
+    background: #d4af37;
     border-radius: 8px;
     margin-right: 7px;
     width: 800px;
@@ -184,7 +184,7 @@ hr{
 }
 
 .meta_2{
-    background: #e1b00f;
+    background: #d3be89;
     border-radius: 8px;
     margin-right: 7px;
     width: 500px;
@@ -195,7 +195,7 @@ hr{
 }
 
 .meta_3{
-    background: #d3be89;
+    background: #e1b00f;
     border-radius: 8px;
     margin-right: 7px;
     width: 650px;
@@ -206,7 +206,7 @@ hr{
 }
 
 .meta_4{
-    background: #342e1b;
+    background: #171614;
     border-radius: 8px;
     margin-right: 7px;
     width: 700px;
@@ -217,7 +217,7 @@ hr{
 }
 
 .meta_5{
-    background: #6d6060;
+    background: #5b5a5a;
     border-radius: 8px;
     margin-right: 7px;
     width: 850px;
@@ -228,7 +228,7 @@ hr{
 }
 
 .meta_6{
-    background: #d4af37;
+    background: #171614;
     border-radius: 8px;
     margin-right: 7px;
     width: 550px;
