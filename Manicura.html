@@ -52,9 +52,12 @@
             <a href="agendar_cita.html"><button class="btn btn-light boton">Agendar Cita</button></a>
           </div>
         </div>
-        <div class="col-auto px-0 mx-0 mt-5">
+        <div class="col-auto d-none d-lg-block d-flex justify-content-between p-0 mx-0 mt-5">
           <img src="Imagenes/Uñas/Manicura.png" alt="" width="700px" class="img-fluid manos">
         </div>
+      </div>
+      <div class="row d-flex justify-content-end d-lg-none d-block p-0">
+        <img src="Imagenes/Uñas/Manicura.png" alt="" width="700px" class="img-fluid manos p-0">
       </div>
     </div>
 
@@ -77,69 +80,77 @@
             </div>
           </div>
         </div>
-        <div class="vr d-none d-md-block" style="height: 650px;"></div>
-        <div class="col">
-          <div class="text-center subtitulo sub1">Tamaño</div>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="btn-group-vertical" role="group" aria-label="grupo de Botones">
-                <button type="button" class="btn btn-lg btn-light numeros">1</button>
-                <button type="button" class="btn btn-lg btn-light numeros">2</button>
-                <button type="button" class="btn btn-lg btn-light numeros">3</button>
-                <button type="button" class="btn btn-lg btn-light numeros">4</button>
-                <button type="button" class="btn btn-lg btn-light numeros">5</button>
-                <button type="button" class="btn btn-lg btn-light numeros">6</button>
-                <button type="button" class="btn btn-lg btn-light numeros">7</button>
-                <button type="button" class="btn btn-lg btn-light numeros">8</button>
+        <div class="vr d-none d-md-block p-0" style="height: 650px;"></div>
+        <div class="col-md-12 col-lg-6">
+          <div class="text-center subtitulo sub1 mt-lg-0 mt-sm-5">Tamaño</div>
+          <div class="row d-flex align-items-center justify-content-evenly">
+            <div class="col-auto largo">
+              <div class="btn-group-vertical" id="grupoTamanos" role="group" aria-label="grupo de Botones">
+                <button type="button" class="btn btn-lg btn-light numeros" data-img="Imagenes/Uñas/Imagen8.jpg">1</button>
+                <button type="button" class="btn btn-lg btn-light numeros" data-img="Imagenes/Uñas/Imagen7.jpg">2</button>
+                <button type="button" class="btn btn-lg btn-light numeros" data-img="Imagenes/Uñas/Imagen6.jpg">3</button>
+                <button type="button" class="btn btn-lg btn-light numeros" data-img="Imagenes/Uñas/Imagen5.jpg">4</button>
+                <button type="button" class="btn btn-lg btn-light numeros" data-img="Imagenes/Uñas/Imagen4.jpg">5</button>
+                <button type="button" class="btn btn-lg btn-light numeros" data-img="Imagenes/Uñas/Imagen3.jpg">6</button>
+                <button type="button" class="btn btn-lg btn-light numeros" data-img="Imagenes/Uñas/Imagen2.jpg">7</button>
+                <button type="button" class="btn btn-lg btn-light numeros" data-img="Imagenes/Uñas/Imagen1.jpg">8</button>
               </div>
             </div>
+            
             <div class="col-auto">
-              <div><img src="Imagenes/Uñas/Captura de pantalla 2025-10-25 225842.png" alt="" class="w-50 mt-5 px-0"></div>
+              <img id="imagenSeleccion" src="Imagenes/Uñas/Imagen8.jpg" class="img-fluid mt-3" style="max-width:200px;">
             </div>
+          </div>
+          <div>
+            <p class="nota text-center text-secondary px-5">Los tamaños mostrados son solo demostrativos. Para conocer el tamaño real, contactenos por Whatsapp</p>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container-fluid mt-5">
+    <div class="container-fluid mt-5 mt-md-4 mt-lg-5 ">
       <div class="row">
-        <div class="subtitulo text-center">Técnicas y acabados profesionales </div>
-        <div class="texto">
-          <p class="descripcion">En J&G GlamStudio cuidamos cada detalle para que tus uñas reflejen estilo, 
-            elegancia y personalidad. Trabajamos con técnicas profesionales que garantizan 
-            un acabado duradero, brillante y perfectamente adaptado a tus gustos.
+        <div class="subtitulo text-center mt-md-3 mt-sm-0">Técnicas y acabados profesionales</div>
+        <div class="texto ">
+          <p class="descripcion">
+          En J&G GlamStudio cuidamos cada detalle para que tus uñas reflejen estilo, 
+          elegancia y personalidad. Trabajamos con técnicas profesionales que garantizan 
+          un acabado duradero, brillante y perfectamente adaptado a tus gustos.
           </p>
-          <ul class="descripcion texto">
-            <li>Uñas Acrílicas <br>
-            Técnica resistente y duradera que utiliza acrílico para crear extensiones firmes y elegantes. Perfectas para
-            quienes buscan uñas largas con diseños personalizados.
-            </li>
-            <li>Uñas de Gel <br>
-            Hechas con gel UV que se endurece con lámpara, ofrecen un acabado más natural y brillante. Son ligeras, 
-            cómodas y con menor olor que el acrílico
-            </li>
-          </ul>
         </div>
       </div>
-      <div class="row">
-        <div class="col col-md-12 px-0">
-          <img src="Imagenes/Uñas/Uñas.png" alt="" width="500px" class="img-fluid">
-        </div>
-        <div class="col-md-12">
+      
+      <div class="row justify-content-between mt-4 flex-md-row-reverse">
+        
+        <div class="col-lg-7 col-md-12 descripcion">
           <ul class="descripcion texto">
+            <li>Uñas Acrílicas<br>
+            Técnica resistente y duradera que utiliza acrílico para crear extensiones firmes y elegantes.
+            </li>
+            <li>Uñas de Gel<br>
+            Hechas con gel UV que se endurece con lámpara, ofrecen un acabado más natural y brillante.
+            </li>
             <li>Polygel<br>
-              Combinan lo mejor del acrílico y el gel: son resistentes, ligeras  
-              y fáciles de moldear. Ideales para quienes buscan una opción 
-              moderna y flexible.
+            Combina lo mejor del acrílico y el gel: resistente, ligero  
+            y fácil de moldear. Una opción moderna y flexible.
             </li>
           </ul>
+        </div>
+        <div class="col-auto d-none d-lg-block p-0">
+          <img src="Imagenes/Uñas/Uñas.png" class="img-fluid uñas_final" alt="" style="max-width:500px;">
+        </div>
+      </div>
+      <div class="row d-lg-none d-sm-block">
+        <div class="col-auto p-0">
+          <img src="Imagenes/Uñas/Uñas.png" class="img-fluid uñas_final" alt="" style="max-width:500px;">
         </div>
       </div>
     </div>
 
+
     <a href="https://wa.me/5517746761?text=Hola" class="float-wa" target="_blank">
-    <i class="fa fa-whatsapp" style="margin-top:16px;"></i>
-</a>
+      <i class="fa fa-whatsapp" style="margin-top:16px;"></i>
+    </a>
 
     <footer class="pt-4 text-white" style="background: #171614;">
       <div class="container-fluid ">

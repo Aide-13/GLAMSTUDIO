@@ -146,6 +146,26 @@ body {
   object-fit: contain;
 }
 
+.nota{
+  font-size: 15px;
+}
+
+.descripcion{
+  padding: 0 40px;
+}
+
+@media (max-width:1100px) {
+  .uñas_final{
+    width: 400px;
+    height: auto;
+  }
+
+  .manos{
+    width: 500;
+    height: auto;
+  }
+  
+}
 
 @media (max-width: 992px) {
   .container {
@@ -161,6 +181,21 @@ body {
   .center {
     width: 45%;
   }
+
+  .center img{
+    width: 70%;
+    height: auto;
+  }
+
+  .descripcion{
+    padding: 0 10px;
+  }
+
+  .manos{
+    width: 600;
+    height: auto;
+  }
+
 }
 
 @media (max-width: 600px) {
@@ -170,18 +205,33 @@ body {
   }
 
   .circle img {
-    width: 20%;
-    height: 30%;
+    width: 15%;
+    height: auto;
   }
 
+  .circle{
+    width: 90%;
+    height: 90%;
+  }
+  
   .center {
-    width: 50%;
+    width: 40%;
   }
 
   .manos{
     width: 500;
     height: auto;
   }
+
+  .nota{
+    font-size: 10px;
+  }
+
+  .uñas_final{
+    width: 300px;
+    height: auto;
+  }
+ 
   
 }
 
@@ -219,5 +269,15 @@ body {
 
   .subtitulo{
     margin-top: 15%;
+  }
+
+  .uñas_final{
+    width: 200px;
+    height: auto;
+  }
+
+  .manos{
+    width: 400;
+    height: auto;
   }
 }
