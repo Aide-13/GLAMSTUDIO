@@ -32,9 +32,20 @@ body {
 
 /*sección 1*/
 
+.titulo{
+    font-family: "Playfair Display", serif;
+    color: #ffffff;
+    font-size: 1000%;
+    text-shadow:  2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.subtitulo{
+    font-family: "Playfair Display", serif;
+    color: #ffffff;
+    font-size: 200%;
+}
+
 .seccion_1{
-    display: flex;
-    flex-direction: column;
     background: #171614;
 }
 
@@ -85,24 +96,9 @@ body {
 }
 
 /*Sección 3*/
-.seccion_3{
-    display: flex;
-    flex-direction: row;
-    margin-left: 35px;
-    margin-right: 35px;
-}
 
-.mision{
-    width: 50%;
-    background: #f4f4f4;
-    margin-right: 10px;
-}
 
-.vision{
-    width: 50%;
-    background: #f4f4f4;
-    margin-left: 10px;
-}
+
 
 .titulo_3{
     font-family: "Poppins", sans-serif;
@@ -154,6 +150,7 @@ hr{
     margin-bottom: 20px;
     margin-left: 30px;
 }
+/*
 .metas{
     display: flex;
     flex-direction: column;
@@ -171,22 +168,21 @@ hr{
     flex-direction: row;
     margin-top: 10px;
 }
-
-.meta_1{
-    background: #d4af37;
+*/
+.meta{
     border-radius: 8px;
-    margin-right: 7px;
+   /* margin-right: 7px;
     width: 800px;
     height: 170px;
     display: flex;
     align-items: center;
-    text-align: center;
+    text-align: center;*/
 }
-
+/*
 .meta_2{
     background: #d3be89;
     border-radius: 8px;
-    margin-right: 7px;
+   / margin-right: 7px;
     width: 500px;
     height: 170px;
     display: flex;
@@ -237,15 +233,70 @@ hr{
     align-items: center;
     text-align: center;
 }
-
+*/
 .texto_4{
     font-family: "Poppins", sans-serif;
     color: white;
     font-weight: bold;
     line-height: 1.5;
-    margin: 0px 35px 0px 35px;
 }
 
 .imagen_2{
     margin: 0px 70px 0px 70px;
+}
+
+@media (max-width:1000px) {
+  
+  .logo{
+    width: 300px;
+  }
+}
+
+@media (max-width:900px) {
+  
+  .contimg{
+    width: 300px;
+    height: auto;
+  }
+}
+
+
+@media (max-width:600px) {
+  .titulo{
+    font-size: 100px;
+  }
+  .subtitulo{
+    font-size: 20px;
+  }
+  .logo{
+    width: 250px;
+    height: auto;
+  }
+  .texto_3{
+    margin: 0px 50px 25px 50px;
+}
+.texto_4{
+    font-size: 15px;
+    text-align: center;
+}
+}
+
+@media (max-width:400px) {
+  .titulo{
+    font-size: 80px;
+  }
+  .subtitulo{
+    font-size: 20px;
+  }
+  .logo{
+    width: 250px;
+    height: auto;
+  }
+  .texto_3{
+    margin: 0px 50px 25px 50px;
+}
+.texto_4{
+    font-size: 15px;
+    text-align: center;
+}
 }
