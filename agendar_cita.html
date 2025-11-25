@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="Imagenes/icono.png" type="image/x-icon">
+    <link rel="icon" href="/Imagenes/icono.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style_agendar_cita.css">
-    <link rel="stylesheet" href="css/whatsapp.css">
     <title>J&G GLAMSTUDIO - Inicio</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-primary  fixed-top">
-      <div class="container-fluid">
+      <div class="container-fluid p-0">
         <a class="navbar-brand" href="index.html"><img src="Imagenes/logo.png" width="45px" alt=""></a>
         <button class="navbar-toggler text-light" 
         type="button" 
@@ -38,106 +36,162 @@
       </div>
     </nav>
 
-    <div class="contenido">
-        <!--Sección 1-->
-        <div class="seccion_1">
-            <div class="contenido_1">
-                <center><p class="titulo_1">GLAM STUDIO</p></center>
-                <center><p class="subtitulo_1">TU BELLEZA, NUESTRO ARTE</p></center>
+    <div class="container-fluid">
+        <div class="row text-center pt-5 pb-2" style="background: #171614;">
+            <div class="col">
+                <div class="col titulo px-5" >
+                    <p class="m-0">GLAM STUDIO</p>
+                </div>
+                <div class="col subtitulo ">
+                    <p>TU BELLEZA, NUESTRO ARTE</p>
+                </div>
             </div>
-
-            <!--formulario-->
+        </div>
+    </div>
+    <!--formulario-->
+    <div class="container-fluid">
+        <div class="row">
             <div class="seccion_2">
-                <div class="seccion_3">
+                <div class="seccion_3 d-none d-lg-block">
                     <h3 class="titulo_2">Agenda tu cita</h3>
                     <p class="texto_1">Tu momento de belleza comienza con una cita...</p>
                     <div class="formulario">
                         <div>
                             <label for="" class="dato">Nombre:</label>
-                            <input type="text" class="campo" placeholder="Ingresa tu nombre">
+                            <input id="nombre_pc" type="text" class="campo" placeholder="Ingresa tu nombre">
                         </div>
                         <div>
                             <label for="" class="dato">Apellidos:</label>
-                            <input type="text" class="campo_apellidos" placeholder="Ingresa tus apellidos">
+                            <input id="apellidos_pc" type="text" class="campo_apellidos" placeholder="Ingresa tus apellidos">
                         </div>
                         <div>
                             <label for="" class="dato">Teléfono:</label>
-                            <input type="text" class="campo_1" placeholder="+52">
-                            <input type="text" class="campo_telefono" placeholder="Ingresa tu número teléfonico">
+                            <input id="lada_pc" type="text" class="campo_1" placeholder="+52">
+                            <input id="telefono_pc" type="text" class="campo_telefono" placeholder="Ingresa tu número teléfonico">
                         </div>
                         <div>
                             <label for="" class="dato">Servicio de interes:</label>
-                            <select class="campo_5" name="" id="" class="servicios">
+                            <select class="campo_5" name="" id="servicio_pc" class="servicios">
                                 <option value="0">Selecciona el motivo de tu cita</option>
-                                <option value="1">Manicura</option>
-                                <option value="2">Pedicura</option>
-                                <option value="3">Extenciones de cabello</option>
-                                <option value="4">Laminado de cejas</option>
-                                <option value="5">Lash Lifthing</option>
+                                <option value="Manicura">Manicura</option>
+                                <option value="Pedicura">Pedicura</option>
+                                <option value="Extenciones de cabello">Extenciones de cabello</option>
+                                <option value="Laminado de cejas">Laminado de cejas</option>
+                                <option value="Lash Lifthing">Lash Lifthing</option>
                             </select>
                         </div>
                         <div>
                             <label for="" class="dato">Descripción:</label>
-                            <div><textarea name="" id="" class="campo_2">Cuentanos los detalles para tu cita</textarea></div>
+                            <div><textarea name="" id="descripcion_pc" class="campo_2">Cuentanos los detalles para tu cita</textarea></div>
                         </div>
                         <div class="cita">
                             <div class="fecha">
                                 <label for="" class="dato">fecha:</label>
-                                <input type="date" class="campo_3" placeholder="Día">
+                                <input id="fecha_pc" type="date" class="campo_3" placeholder="Día">
                             </div>
                             <div>
                                 <label for="" class="dato">Hora:</label>
-                                <input type="time" class="campo_4" placeholder="12:00">
+                                <input id="hora_pc" type="time" class="campo_4" placeholder="12:00">
                             </div>
                         </div>
                         <p class="leyenda">La fecha y hora de la cita permanecen pendientes hasta ser <br> confirmada 
                             por el administrador </p>
-                        <button class="agendar">Agendar</button>
+                        <button class="agendar" onclick="enviarWhatsappPC()">Agendar</button>
                     </div>
                 </div>
-                <img class="imagen_1" src="Imagenes/Imagen1_pagina inicio.png" alt="" width="550px">
+
+                <div class="col m-sm-3 m-5 d-block d-lg-none">
+                    <h3 class="titulo_2">Agenda tu cita</h3>
+                    <p class="texto_1">Tu momento de belleza comienza con una cita...</p>
+                    <div class="col">
+                        <div>
+                            <label for="nombre" class="dato_1">Nombre:</label>
+                            <input type="text" id="nombre" class="campo_10 form-control" placeholder="Ingresa tu nombre">
+                        </div>
+                        <div>
+                            <label for="apellidos" class="dato_1">Apellidos:</label>
+                            <input type="text" id="apellidos" class="campo_10 form-control" placeholder="Ingresa tus apellidos">
+                        </div>
+                        <div class="row">
+                            <label for="telefono" class="dato_1">Teléfono:</label>
+                            <div class="col-3 pe-0">
+                                <input type="text" id="lada" class="campo_10 form-control" placeholder="+52">
+                            </div>
+                            <div class="col-9 col-sm-12 ps-0">
+                                <input type="text" id="telefono" class="campo_10 form-control" placeholder="Ingresa tu número teléfonico">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="servicio" class="dato_1">Servicio de interes:</label>
+                            <select class="campo_10 form-control" name="" id="servicio" class="servicios">
+                                <option value="0">Selecciona el motivo de tu cita</option>
+                                <option value="Manicura">Manicura</option>
+                                <option value="Pedicura">Pedicura</option>
+                                <option value="Extenciones de cabello">Extenciones de cabello</option>
+                                <option value="Laminado de cejas">Laminado de cejas</option>
+                                <option value="Lash Lifthing">Lash Lifthing</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="descripcion" class="dato_1">Descripción:</label>
+                            <div><textarea name="" id="descripcion" class="campo_10 form-control" placeholder="Cuentanos los detalles para tu cita"></textarea></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="fecha" class="dato_1">fecha:</label>
+                                <input type="date" id="fecha" class="campo_10 form-control" placeholder="Día">
+                            </div>
+                            <div class="col-6">
+                                <label for="hora" class="dato_1">Hora:</label>
+                                <input type="time" id="hora" class="campo_10 form-control" placeholder="12:00">
+                            </div>
+                        </div>
+                        <p class="m-3 text-center">La fecha y hora de la cita permanecen pendientes hasta ser <br> confirmada 
+                            por el administrador </p>
+                        <div class="d-block d-lg-none d-flex justify-content-end">
+                            <button class="agendar_1" onclick="enviarWhatsappMovil()">Agendar</button>
+                        </div>
+                        
+                    </div>
+                </div>                
+                <img class="imagen_1 d-none d-lg-block" src="Imagenes/Imagen1_pagina inicio.png" alt="" width="380px">
             </div>
         </div>
-
     </div>
 
-    <a href="https://wa.me/5517746761?text=Hola" class="float-wa" target="_blank">
-    <i class="fa fa-whatsapp" style="margin-top:16px;"></i>
-</a>
-
-    <footer class="mt-0 pt-4" style="background: #C6A04F;">
-        <div class="container">
+    <footer class=" pt-4" style="background: #171614;">
+        <div class="container-fluid">
       
         <div class="text-center ">
-            <p class="mb-2 fw-semibold">Todos los derechos son reservados</p>
+            <p class="mb-2 fw-semibold text-white">Todos los derechos son reservados</p>
         </div>
 
         <div class="d-flex justify-content-evenly flex-wrap">
           
             <div class="col-auto">
-            <img src="Imagenes/logo_lg.png" alt="logo" width="100px">
-            <a href="#" class="text-decoration-none text-black fw-bold">J&G GLAMSTUDIO</a>
+            <img src="Imagenes/logo.png" alt="logo" width="100px">
+            <a href="#" class="text-decoration-none text-white fw-bold">J&G GLAMSTUDIO</a>
             </div>
           
           <div class="vr d-none d-md-block" style="height: 100px;"></div>
           
           <div class="col-auto text-center">
             <div class="col">
-              <a href="#" class="text-decoration-none text-black"><p class="mb-1">Inicio</p></a>
-              <a href="#" class="text-decoration-none text-black"><p class="mb-1">Quienes Somos</p></a>
+              <a href="index.html" class="text-decoration-none text-white"><p class="mb-1">Inicio</p></a>
+              <a href="quienes_somos.html" class="text-decoration-none text-white"><p class="mb-1">Quienes Somos</p></a>
             </div>
             <div class="row">
-              <a href="#" class="text-decoration-none text-black"><p class="mb-1">Nuestros Servicios</p></a>
-              <a href="#" class="text-decoration-none text-black"><p>Reserva tu cita</p></a>
+              <a href="Servicios.html" class="text-decoration-none text-white"><p class="mb-1">Nuestros Servicios</p></a>
+              <a href="agendar_cita.html" class="text-decoration-none text-white"><p>Reserva tu cita</p></a>
             </div>
           </div>
           
           <div class="vr d-none d-md-block" style="height: 100px;"></div>
           
           <div class="col-auto">
-            <a href="#" class="text-decoration-none text-black"><p><img src="Imagenes/whatsapp.png" alt="whatsapp" width="20px" class="mx-2">Tel. 55 1774 6761</p></a> 
-            <a href="#" class="text-decoration-none text-black"><p><img src="Imagenes/instagram.png" alt="instagram" width="20px" class="mx-2">jglam_studio</p></a>
-            <a href="#" class="text-decoration-none text-black"><p><img src="Imagenes/facebook.png" alt="facebook" width="20px" class="mx-2">J&Glam Studio</p></a>
+            <a href="#" class="text-decoration-none text-white"><p><img src="Imagenes/whatsapp.png" alt="whatsapp" width="20px" class="mx-2">Tel. 55 1774 6761</p></a> 
+            <a href="#" class="text-decoration-none text-white"><p><img src="Imagenes/instagram.png" alt="instagram" width="20px" class="mx-2">jglam_studio</p></a>
+            <a href="#" class="text-decoration-none text-white"><p><img src="Imagenes/facebook.png" alt="facebook" width="20px" class="mx-2">J&Glam Studio</p></a>
           </div>
         </div>
       </div>
@@ -146,6 +200,6 @@
 
 </body>
 <script src="js/bootstrap.bundle.js"></script>
-<script src="js/foot.js"></script>
+<script src="js/enviar_citas.js"></script>
 </html>
 
