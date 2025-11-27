@@ -18,7 +18,7 @@ function enviarWhatsappPC(){
 ✽ Fecha: ${fecha}
 ❀ Hora: ${hora}`;
 
-    const url = "https://wa.me/525549048489?text=" + encodeURIComponent(mensaje);
+    const url = "https://wa.me/525574542710?text=" + encodeURIComponent(mensaje);
 
     window.open(url, "_blank");
 }
@@ -43,7 +43,7 @@ function enviarWhatsappMovil(){
 ✽ Fecha: ${fecha}
 ❀ Hora: ${hora}`;
 
-    const url = "https://wa.me/525549048489?text=" + encodeURIComponent(mensaje);
+    const url = "https://wa.me/525574542710?text=" + encodeURIComponent(mensaje);
 
     window.open(url, "_blank");
 }

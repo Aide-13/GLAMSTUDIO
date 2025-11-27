@@ -14,7 +14,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-primary  fixed-top">
-      <div class="container-fluid">
+      <div class="container-fluid p-0">
         <a class="navbar-brand" href="index.html"><img src="Imagenes/logo.png" width="45px" alt=""></a>
         <button class="navbar-toggler text-light" 
         type="button" 
@@ -28,47 +28,81 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto me-3 ">
             <li class="barra nav-item p-3"><a class="nav-link text-white" href="index.html">Inicio</a></li>
-            <li class="barra nav-item p-3"><a class="nav-link text-white" href="#">Quienes Somos</a></li>
-            <li class="barra nav-item p-3"><a class="nav-link text-white" href="#">Nuestros Servicios</a></li>
+            <li class="barra nav-item p-3"><a class="nav-link text-white" href="quienes_somos.html">Quienes Somos</a></li>
+            <li class="barra nav-item p-3"><a class="nav-link text-white" href="Servicios.html">Nuestros Servicios</a></li>
           </ul>
-          <button class=" btn btn-light nav-item" id="citas"> <a class="nav-link" href="#">Reserva una Cita</a></button>
+          <button class=" btn btn-light nav-item" id="citas"> <a class="nav-link" href="agendar_cita.html">Reserva una Cita</a></button>
         </div>
       </div>
     </nav>
 
-    <div class="contenido">
-        <!--Sección 1-->
-        <div class="seccion_1">
-            <div class="contenido_1">
-                <center><p class="titulo_1">GLAM STUDIO</p></center>
-                <center><p class="subtitulo_1">TU BELLEZA, NUESTRO ARTE</p></center>
-
-                <!--Iniciar sesión-->
-                <div class="login">
-                    <center><h3 class="titulo_2">Iniciar Sesión</h3></center>
-                    <div class="contenido_2">
-                        <div>
-                            <center><label class="dato" for="">Usuario:</label>
-                            <input class="campo" type="text" name="" id="" placeholder="Ingresa tu usuario / correo"></center>
-                        </div>
-                        <div>
-                            <center><label class="dato" for="">Contraseña</label>
-                            <input class="campo" type="password" name="" id="" placeholder="Ingresa tu contraseña"></center>
-                        </div>
-                        <a href="Agenda.html"><center><button class="ingresar">Ingresar</button></center></a> 
-                        <center><a id="recuperar_contraseña" href="">Olvide mi contraseña</a></center>
-                    </div>
-                    <center><p class="leyenda">Este incio de sesión es solo para los administradores de la pagina</p></center>
+    <div class="container-fluid">
+        <div class="row text-center pt-5 pb-2" style="background: #171614;">
+            <div class="col">
+                <div class="col titulo px-5" >
+                    <p class="m-0">GLAM STUDIO</p>
                 </div>
-                <center><img class="imagen_1" src="Imagenes/logo_lg.png" alt="" width="80px">
-                <label for="" class="logo">J&K GLAM STUDIO</label></center>
+                <div class="col subtitulo ">
+                    <p>TU BELLEZA, NUESTRO ARTE</p>
+                </div>
             </div>
         </div>
-
     </div>
 
-    <footer class="mt-0 pt-4" style="background: #171614;">
-        <div class="container">
+    <div class="container-fluid py-5">
+      
+      <!-- Sección 1 -->
+      <div class="row justify-content-center">
+        <div class="fondo col-lg-6 col-md-8">
+          
+          <!-- Login -->
+            <div class="card p-5 shadow">
+              <h3 class="titulo_2 text-center mb-3">Iniciar Sesión</h3>
+              
+              <form class="mt-4">
+                <div class="row mb-3 text-center">
+                  <div class="col-12 col-md-3">
+                    <label class="dato form-label">Usuario:</label>
+                  </div>
+                  <div class="col-12 col-md-9">
+                    <input type="text" class=" campo form-control mx-auto" placeholder="Ingresa tu usuario / correo">
+                  </div>
+                </div>
+
+                <div class="row mb-3 text-center">
+                  <div class="col-12 col-md-3">
+                    <label class="dato form-label">Contraseña: </label>
+                  </div>
+                  <div class="col-12 col-md-9">
+                    <input type="password" class="campo form-control mx-auto" placeholder="Ingresa tu contraseña">
+                  </div>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col-4 mb-2 text-center">
+                    <a href="Agenda.html" class="ingresar btn btn-light">Ingresar</a>
+                  </div>
+                </div>
+                
+              </form>
+              
+              <p class="text-center mt-3 leyenda ">
+                Este inicio de sesión es solo para los administradores de la página
+              </p>
+            </div>
+            
+            <div class="row justify-content-center mt-4 ">
+              <div class="col-auto">
+                <img src="Imagenes/logo.png" alt="logo" width="70px">
+                <a href="#" class="text-decoration-none text-white fw-bold">J&G GLAMSTUDIO</a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="mt-5 pt-4" style="background: #171614;">
+        <div class="container-fluid">
       
         <div class="text-center ">
             <p class="mb-2 fw-semibold text-white">Todos los derechos son reservados</p>
@@ -85,12 +119,12 @@
           
           <div class="col-auto text-center">
             <div class="col">
-              <a href="#" class="text-decoration-none text-white"><p class="mb-1">Inicio</p></a>
-              <a href="#" class="text-decoration-none text-white"><p class="mb-1">Quienes Somos</p></a>
+              <a href="index.html" class="text-decoration-none text-white"><p class="mb-1">Inicio</p></a>
+              <a href="quienes_somos.html" class="text-decoration-none text-white"><p class="mb-1">Quienes Somos</p></a>
             </div>
             <div class="row">
-              <a href="#" class="text-decoration-none text-white"><p class="mb-1">Nuestros Servicios</p></a>
-              <a href="#" class="text-decoration-none text-white"><p>Reserva tu cita</p></a>
+              <a href="Servicios.html" class="text-decoration-none text-white"><p class="mb-1">Nuestros Servicios</p></a>
+              <a href="agendar_cita.html" class="text-decoration-none text-white"><p>Reserva tu cita</p></a>
             </div>
           </div>
           

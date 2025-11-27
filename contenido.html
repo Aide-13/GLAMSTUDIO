@@ -38,84 +38,182 @@
       </div>
     </nav>
 
-    <!--Sección 1-->
-    <div class="contenido">
-        <div class="seccion_1">
-            <div class="contenido_1">
-                <center><p class="titulo_1">GLAM STUDIO</p></center>
-                <center><p class="subtitulo_1">TU BELLEZA, NUESTRO ARTE</p></center>
+    <div class="container-fluid">
+        <div class="row text-center pt-5 pb-2" style="background: #171614;">
+            <div class="col">
+                <div class="col titulo px-5" >
+                    <p class="m-0">GLAM STUDIO</p>
+                </div>
+                <div class="col subtitulo ">
+                    <p>TU BELLEZA, NUESTRO ARTE</p>
+                </div>
             </div>
         </div>
-
-        <!--Sección 2-->
-
-        <div class="seccion_2">
-            <h3 class="titulo_2">Contenido de la Página</h3>
-
-            <!--Formulario-->
-            <div class="formulario">
-                <div>
-                    <label for="" class="dato">Título contenido:</label>
-                    <input type="text" class="campo_1" placeholder="Ingresa el título de tú contenido">
-                </div>
-                <p class="nota_1">Detalles del contenido</p>
-                <div>
-                    <label for="" class="dato">Descripción:</label>
-                    <div><textarea name="" class="campo_2" placeholder="Ingresa la descripcioón del contenido (120 palabras)"></textarea></div>
-                </div>
-                <div class="precio">
-                    <label for="" class="dato">Precio:</label>
-                    <input type="text" class="campo_3" placeholder="$0.00">
-                </div>
-                <p class="nota_2">Ingresa la fecha limite del contenido</p>
-                <div>
-                    <label for="" class="dato">Disponible hasta:</label>
-                    <input type="date" class="campo_4">
-                </div>
-                <div>
-                    <label for="" class="dato">Seleccionar Archivo</label>
-                    <input type="file" class="campo_5">
-                </div>
-                <button class="guardar">Guardar</button>
-            </div>
-        </div>
-        <img class="imagen_1" src="Imagenes/promocion.png" alt="" width="400px">
     </div>
 
+  <div class="container-fluid">
+    <!--Sección 2-->
+    <div class="contenido seccion_2 d-none d-lg-block">
+      <h3 class="titulo_2">Contenido de la Página</h3>
+      
+      <!--Formulario-->
+      <form action="">
+        <div class=" formulario">
+          <div>
+            <label for="" class="dato">Título contenido:</label>
+            <input type="text" class="campo_1" placeholder="Ingresa el título de tú contenido">
+          </div>
+          <p class="nota_1">Detalles del contenido</p>
 
-    <footer class="mt-5 pt-4" style="background: #C6A04F;">
-        <div class="container">
-    
+          <div>
+            <label for="" class="dato">Descripción:</label>
+            <div>
+              <textarea name="" class="campo_2" placeholder="Ingresa la descripcioón del contenido (120 palabras)"></textarea>
+            </div>
+          </div>
+          
+          <div class="precio">
+            <label for="" class="dato">Precio:</label>
+            <input type="text" class="campo_3" placeholder="$0.00">
+          </div>
+
+          <p class="nota_2">Ingresa la fecha limite del contenido</p>
+          <div>
+            <label for="" class="dato">Disponible hasta:</label>
+            <input type="date" class="campo_4">
+          </div>
+          <div class="my-5">
+            <label for="" class="dato me-1">Archivo: </label>
+            <label class="btn btn-light">
+              <i class="bi bi-upload"></i> Seleccionar Archivo
+              <input type="file" id="archivo" hidden>
+            </label>
+            <span id="nombre-archivo" class="ms-2 text-secondary"></span>
+          </div>
+          <button class="guardar">Guardar</button>
+        </div>
+        <img class="imagen_1 d-none d-lg-block" src="Imagenes/promocion.png" alt="">
+      </form>
+    </div>
+
+    <!--moviles-->
+    <div class="col m-sm-3 m-5 d-block d-lg-none">
+      <h3 class="titulo_2">Contenido de la Página</h3>
+      
+      <!--Formulario-->
+      <form action="">
+        <div class="formulario">
+          <div class="my-4">
+            <label for="" class="dato_1 form-label">Título contenido:</label>
+            <input type="text" class="campo form-control" placeholder="Ingresa el título de tú contenido">
+          </div>
+
+          <p class="nota p-0 my-3">Detalles del contenido</p>
+
+          <div class="my-4">
+            <label for="" class="dato_1 form-label">Descripción:</label>
+            <div>
+              <textarea name="" class="campo form-control placeholder="Ingresa la descripcioón del contenido (120 palabras)"></textarea>
+            </div>
+          </div>
+          
+          <div class="my-4">
+            <label for="" class="dato_1 form-label">Precio:</label>
+            <input type="text" class="campo form-control" placeholder="$0.00">
+          </div>
+
+          <p class="nota p-0 my-3">Ingresa la fecha limite del contenido</p>
+
+          <div class="my-4">
+            <label for="" class="dato_1 form-label">Disponible hasta:</label>
+            <input type="date" class="campo form-control">
+          </div>
+          <div class="my-4">
+            <label for="" class="dato_1 form-label">Archivo: </label>
+            <label class="btn btn-light">
+              <i class="bi bi-upload"></i> Seleccionar Archivo
+              <input type="file" id="archivo" hidden>
+            </label>
+            <span id="nombre-archivo" class="ms-2 text-secondary"></span>
+          </div>
+          <div class="d-block d-lg-none d-flex justify-content-end">
+            <button class="guardar_1">Guardar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+        <div class="col">
+          <div class="table table-responsive">
+            <table class="table table-bordered table-hover">
+              <thead class="tabla table-light">
+                <tr>
+                  <th>Titulo contenido</th>
+                  <th>Descripción</th>
+                  <th>Precio</th>
+                  <th>Fecha de disponibilidad</th>
+                  <th>Archivo</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <a href="#"><button class="btn btn-sm btn-outline-dark"><i class="bi bi-pencil" data-bs-toggle="modal" data-bs-target="#modalEditar"></i>  </button></a>
+                    <a href="#"><button class="btn btn-sm btn-outline-dark"><i class="bi bi-info-circle" data-bs-toggle="modal" data-bs-target="#modalConsultar"></i> </button></a>
+                    <a href="#"><button class="btn btn-sm btn-outline-dark"><i class="bi bi-arrow-clockwise"></i></button></a>
+                    <a href="#"><button class="btn btn-sm btn-outline-dark"><i class="bi bi-trash" data-bs-toggle="modal" data-bs-target="#modalEliminar"></i></button></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <footer class="mt-5 pt-4" style="background: #171614;">
+        <div class="container-fluid">
+      
         <div class="text-center ">
-            <p class="mb-2 fw-semibold">Todos los derechos son reservados</p>
+            <p class="mb-2 fw-semibold text-white">Todos los derechos son reservados</p>
         </div>
 
         <div class="d-flex justify-content-evenly flex-wrap">
-            
+          
             <div class="col-auto">
-            <img src="/Imagenes/logo_lg.png" alt="logo" width="100px">
-            <a href="#" class="text-decoration-none text-black fw-bold">J&G GLAMSTUDIO</a>
+            <img src="Imagenes/logo.png" alt="logo" width="100px">
+            <a href="#" class="text-decoration-none text-white fw-bold">J&G GLAMSTUDIO</a>
             </div>
           
-            <div class="vr d-none d-md-block" style="height: 100px;"></div>
+          <div class="vr d-none d-md-block" style="height: 100px;"></div>
           
-            <div class="col-auto text-center">
+          <div class="col-auto text-center">
             <div class="col">
-              <a href="index.html" class="text-decoration-none text-black"><p class="mb-1">Inicio</p></a>
-              <a href="quienes_somos.html" class="text-decoration-none text-black"><p class="mb-1">Quienes Somos</p></a>
+              <a href="index.html" class="text-decoration-none text-white"><p class="mb-1">Inicio</p></a>
+              <a href="quienes_somos.html" class="text-decoration-none text-white"><p class="mb-1">Quienes Somos</p></a>
             </div>
             <div class="row">
-              <a href="Servicios.html" class="text-decoration-none text-black"><p class="mb-1">Nuestros Servicios</p></a>
-              <a href="agendar_cita.html" class="text-decoration-none text-black"><p>Reserva tu cita</p></a>
+              <a href="Servicios.html" class="text-decoration-none text-white"><p class="mb-1">Nuestros Servicios</p></a>
+              <a href="agendar_cita.html" class="text-decoration-none text-white"><p>Reserva tu cita</p></a>
             </div>
           </div>
           
           <div class="vr d-none d-md-block" style="height: 100px;"></div>
           
           <div class="col-auto">
-            <a href="#" class="text-decoration-none text-black"><p><img src="/Imagenes/whatsapp.png" alt="whatsapp" width="20px" class="mx-2">Tel. 55 1774 6761</p></a> 
-            <a href="#" class="text-decoration-none text-black"><p><img src="/Imagenes/instagram.png" alt="instagram" width="20px" class="mx-2">jglam_studio</p></a>
-            <a href="#" class="text-decoration-none text-black"><p><img src="/Imagenes/facebook.png" alt="facebook" width="20px" class="mx-2">J&Glam Studio</p></a>
+            <a href="#" class="text-decoration-none text-white"><p><img src="Imagenes/whatsapp.png" alt="whatsapp" width="20px" class="mx-2">Tel. 55 1774 6761</p></a> 
+            <a href="#" class="text-decoration-none text-white"><p><img src="Imagenes/instagram.png" alt="instagram" width="20px" class="mx-2">jglam_studio</p></a>
+            <a href="#" class="text-decoration-none text-white"><p><img src="Imagenes/facebook.png" alt="facebook" width="20px" class="mx-2">J&Glam Studio</p></a>
           </div>
         </div>
       </div>

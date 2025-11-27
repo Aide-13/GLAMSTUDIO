@@ -37,6 +37,7 @@ body {
 
 .subtitulo{
     font-family: "Playfair Display", serif;
+    color: #ffffff;
     font-size: 200%;
 }
 
@@ -51,4 +52,41 @@ body {
 .botones{
   background-color: #C6A04F;
   color: #ffffff;
+}
+
+.tabla th{
+  background: #d4af37;
+  color: #fff;
+}
+
+
+@media (max-width:900px) {
+  .titulo{
+    font-size: 100px;
+  }
+}
+
+
+@media (max-width:600px) {
+  .titulo{
+    font-size: 90px;
+  }
+  .subtitulo{
+    font-size: 20px;
+  }
+}
+
+@media (max-width:400px) {
+  .titulo{
+    font-size: 60px;
+  }
+  .subtitulo{
+    font-size: 15px;
+  }
+  .dato{
+    font-size: 15px;
+  }
+  .campo{
+    font-size: 13px;
+  }
 }

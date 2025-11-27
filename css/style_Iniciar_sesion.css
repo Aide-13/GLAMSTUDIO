@@ -1,7 +1,7 @@
 body {
   font-family: "Raleway", sans-serif;
   user-select: none;
-  /*background-color: #C6A04F;*/
+  background-color: #171614;
 }
 
 .navbar{
@@ -29,6 +29,18 @@ body {
 
 }
 
+.titulo{
+    font-family: "Playfair Display", serif;
+    color: #ffffff;
+    font-size: 1000%;
+    text-shadow:  2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.subtitulo{
+    font-family: "Playfair Display", serif;
+    color: #ffffff;
+    font-size: 200%;
+}
 /*sección 1*/
 
 .seccion_1{
@@ -66,15 +78,11 @@ body {
 .titulo_2{
   font-family: "Poppins", sans-serif;
   color: black;
-  padding: 15px;
-  margin-top: 20px;
-  margin-bottom: 30px;
 }
 
 .dato{
   font-family: "Poppins", sans-serif;
   color: black;
-  padding: 0px 3px 20px 65px;
   font-size: 17px;
 }
 
@@ -83,20 +91,23 @@ body {
   border-radius: 13px;
   border: 1px solid #f1f0f0;
   background: #f4f4f4;
-  color: #c0bfbf;
-  width: 450px;
-  padding: 10px;
+  color: #938f8f;
   font-size: 15px;
 }
 
 .ingresar{
   font-family: "Poppins", sans-serif;
   border-radius: 13px;
-  border: 1px solid #c08e22;
+  border: 2px solid #c08e22;
   background: #c08e22;
   color: white;
   padding: 10px;
-  margin: 15px 0px 20px 0px;
+}
+
+.ingresar:hover{
+  background-color: #000000;
+  color: #c08e22;
+  border: 2px solid #c08e22;
 }
 
 #recuperar_contraseña{
@@ -108,8 +119,6 @@ body {
 .leyenda{
   font-family: "Poppins", sans-serif;
   font-size: 13px;
-  padding: 15px;
-  margin-bottom: 25px;
   color: #888484;
 }
 
@@ -117,4 +126,36 @@ body {
   color: black;
   font-family: "Poppins", sans-serif;
   font-size: 15px;
+}
+
+
+@media (max-width:900px) {
+  .titulo{
+    font-size: 100px;
+  }
+}
+
+
+@media (max-width:600px) {
+  .titulo{
+    font-size: 90px;
+  }
+  .subtitulo{
+    font-size: 20px;
+  }
+}
+
+@media (max-width:400px) {
+  .titulo{
+    font-size: 80px;
+  }
+  .subtitulo{
+    font-size: 20px;
+  }
+  .dato{
+    font-size: 15px;
+  }
+  .campo{
+    font-size: 13px;
+  }
 }
