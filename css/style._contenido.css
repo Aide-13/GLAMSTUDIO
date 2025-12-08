@@ -230,6 +230,16 @@ label .dato{
   color: #fff;
 }
 
+.botones{
+  background-color: #C6A04F;
+  color: #ffffff;
+}
+
+.botones:hover{
+  background-color: #171614;
+  color: #C6A04F;
+}
+
 @media (max-width:900px) {
   .titulo{
     font-size: 100px;

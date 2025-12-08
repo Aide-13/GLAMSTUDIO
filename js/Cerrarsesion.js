@@ -5,8 +5,8 @@ function mostrarModal() {
     showCancelButton: true,
     confirmButtonText: 'Aceptar',
     cancelButtonText: 'Cancelar',
-    confirmButtonColor: '#2f2f78',
-    cancelButtonColor: '#ff7317'
+    confirmButtonColor: '#c08e22',
+    cancelButtonColor: '#888484'
   }).then((result) => {
     if (result.isConfirmed) {
       cerrarSesion();
@@ -15,8 +15,5 @@ function mostrarModal() {
 }
 
 function cerrarSesion() {
-  window.location.href = "logout.php"; 
+  window.location.href = "logout.php";
 }
-
-
-
