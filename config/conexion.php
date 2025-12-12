@@ -2,7 +2,7 @@
 class Conexion {
     private $host = "localhost";
     private $user = "root";
-    private $pass = "";
+    private $pass = "Nutria1720*";
     private $db   = "glam_studio";
 
     public function conectar() {

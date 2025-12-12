@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli("localhost", "root", "", "glam_studio");
+$conn = new mysqli("localhost", "root", "Nutria1720*", "glam_studio");
 
 $promos = $conn->query("
     SELECT * FROM promociones 
@@ -25,13 +25,14 @@ $promos = $conn->query("
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style_index.css">
   <link rel="stylesheet" href="css/whatsapp.css">
+  <link rel="stylesheet" href="css/boton_shine.css">
   <title>J&G GLAMSTUDIO - Inicio</title>
 </head>
 <body>
   
   <nav class="navbar navbar-expand-lg navbar-primary  fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><img src="Imagenes/logo.png" width="45px" alt=""></a>
+      <a class="navbar-brand" href="index.php"><img src="Imagenes/logo.png" width="45px" alt=""></a>
       <button class="navbar-toggler text-light" 
         type="button" 
         data-bs-toggle="collapse" 
@@ -47,7 +48,7 @@ $promos = $conn->query("
           <li class="barra nav-item p-3"><a class="nav-link text-white" href="quienes_somos.html">Quienes Somos</a></li>
           <li class="barra nav-item p-3"><a class="nav-link text-white" href="Servicios.html">Nuestros Servicios</a></li>
         </ul>
-        <button class=" btn btn-light nav-item" id="citas"> <a class="nav-link" href="agendar_cita.html">Reserva una Cita</a></button>
+        <button class=" btn nav-item btn-shine"> <a class="nav-link" href="agendar_cita.html">Reserva una Cita</a></button>
       </div>
     </div>
   </nav>
@@ -204,9 +205,9 @@ $promos = $conn->query("
         
         <div class="vr d-none d-md-block" style="height: 100px;"></div>
         <div class="col-auto">
-          <a href="#" class="text-decoration-none text-white"><p><img src="Imagenes/whatsapp.png" alt="whatsapp" width="20px" class="mx-2">Tel. 55 1774 6761</p></a> 
-          <a href="#" class="text-decoration-none text-white"><p><img src="Imagenes/instagram.png" alt="instagram" width="20px" class="mx-2">jglam_studio</p></a>
-          <a href="#" class="text-decoration-none text-white"><p><img src="Imagenes/facebook.png" alt="facebook" width="20px" class="mx-2">J&Glam Studio</p></a>
+          <a href="https://wa.me/5517746761?text=Hola" class="text-decoration-none text-white"><p><img src="Imagenes/whatsapp.png" alt="whatsapp" width="20px" class="mx-2">Tel. 55 1774 6761</p></a> 
+          <a href="https://www.instagram.com/jglam_studio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-decoration-none text-white"><p><img src="Imagenes/instagram.png" alt="instagram" width="20px" class="mx-2">jglam_studio</p></a>
+          <a href="https://www.facebook.com/profile.php?id=61579641932700&sk=about" class="text-decoration-none text-white"><p><img src="Imagenes/facebook.png" alt="facebook" width="20px" class="mx-2">J&Glam Studio</p></a>
         </div>
       </div>
     </div>
@@ -215,5 +216,6 @@ $promos = $conn->query("
 
 <script src="js/bootstrap.bundle.js"></script>
 <script src="js/modal_promocion.js"></script>
+<script src="js/foot.js"></script>
 </body>
 </html>

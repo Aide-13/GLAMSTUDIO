@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Botón Shine</title>
+
+<style>
+  body {
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .btn-shine {
+    position: relative;
+    display: inline-block;
+    padding: 14px 40px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #d4af37;
+    border-radius: 50px;
+    overflow: hidden;
+    transition: 0.3s;
+    letter-spacing: 1px;
+  }
+
+  .btn-shine:hover {
+    background: #d4af37;
+    color: #111;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+  }
+
+  /* Efecto Shine */
+  .btn-shine::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgba(255, 255, 255, 0.8),
+      transparent
+    );
+    transform: skewX(-20deg);
+    transition: 0.7s;
+  }
+
+  .btn-shine:hover::after {
+    left: 200%;
+  }
+</style>
+</head>
+
+<body>
+
+  <a href="#" class="btn-shine">Agenda tu cita</a>
+
+</body>
+</html>

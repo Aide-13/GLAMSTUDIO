@@ -7,7 +7,7 @@ if (!isset($_SESSION['admin'])) {
 }
 
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-$conn = new mysqli("localhost", "root", "", "glam_studio");
+$conn = new mysqli("localhost", "root", "Nutria1720*", "glam_studio");
 
 if ($conn->connect_error) {
     die("Error de conexión: " . $conn->connect_error);
@@ -86,12 +86,13 @@ $promos = $conn->query("SELECT * FROM promociones ORDER BY creado DESC");
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style._contenido.css">
+    <link rel="stylesheet" href="css/boton_shine.css">
     <title>J&G GLAMSTUDIO - Contenido</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-primary  fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="Imagenes/logo.png" width="45px" alt=""></a>
+        <a class="navbar-brand" href="index.php"><img src="Imagenes/logo.png" width="45px" alt=""></a>
         <button class="navbar-toggler text-light" 
         type="button" 
         data-bs-toggle="collapse" 
@@ -106,7 +107,7 @@ $promos = $conn->query("SELECT * FROM promociones ORDER BY creado DESC");
             <li class="barra nav-item p-3"><a class="nav-link text-white" href="app/View/citas.php">Agenda de Citas</a></li>
             <li class="barra nav-item p-3"><a class="nav-link text-white" href="contenido.php">Contenido</a></li>
           </ul>
-          <button class=" btn btn-light nav-item" id="citas" onclick="mostrarModal()"><i class="bi bi-box-arrow-right"></i></button>
+          <button class=" btn nav-item btn-shine" onclick="mostrarModal()"><i class="bi bi-box-arrow-right"></i></button>
         </div>
       </div>
     </nav>
@@ -349,7 +350,7 @@ while ($v = $promos->fetch_assoc()):
           
           <div class="col-auto text-center">
             <div class="col">
-              <a href="index.html" class="text-decoration-none text-white"><p class="mb-1">Inicio</p></a>
+              <a href="index.php" class="text-decoration-none text-white"><p class="mb-1">Inicio</p></a>
               <a href="quienes_somos.html" class="text-decoration-none text-white"><p class="mb-1">Quienes Somos</p></a>
             </div>
             <div class="row">
@@ -361,10 +362,10 @@ while ($v = $promos->fetch_assoc()):
           <div class="vr d-none d-md-block" style="height: 100px;"></div>
           
           <div class="col-auto">
-            <a href="#" class="text-decoration-none text-white"><p><img src="Imagenes/whatsapp.png" alt="whatsapp" width="20px" class="mx-2">Tel. 55 1774 6761</p></a> 
-            <a href="#" class="text-decoration-none text-white"><p><img src="Imagenes/instagram.png" alt="instagram" width="20px" class="mx-2">jglam_studio</p></a>
-            <a href="#" class="text-decoration-none text-white"><p><img src="Imagenes/facebook.png" alt="facebook" width="20px" class="mx-2">J&Glam Studio</p></a>
-          </div>
+          <a href="https://wa.me/5517746761?text=Hola" class="text-decoration-none text-white"><p><img src="Imagenes/whatsapp.png" alt="whatsapp" width="20px" class="mx-2">Tel. 55 1774 6761</p></a> 
+          <a href="https://www.instagram.com/jglam_studio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-decoration-none text-white"><p><img src="Imagenes/instagram.png" alt="instagram" width="20px" class="mx-2">jglam_studio</p></a>
+          <a href="https://www.facebook.com/profile.php?id=61579641932700&sk=about" class="text-decoration-none text-white"><p><img src="Imagenes/facebook.png" alt="facebook" width="20px" class="mx-2">J&Glam Studio</p></a>
+        </div>
         </div>
       </div>
     </footer>
@@ -373,6 +374,7 @@ while ($v = $promos->fetch_assoc()):
 </body>
 <script src="js/bootstrap.bundle.js"></script>
 <script src="js/Cerrarsesion.js"></script>
+<script src="js/foot.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </html>
 

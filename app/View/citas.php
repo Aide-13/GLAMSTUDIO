@@ -45,12 +45,13 @@ $citas = $controller->index();
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/Agenda.css">
+    <link rel="stylesheet" href="/css/boton_shine.css">
     <title>Agenda de Citas</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-primary  fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="/Imagenes/logo.png" width="45px" alt=""></a>
+        <a class="navbar-brand" href="/index.php"><img src="/Imagenes/logo.png" width="45px" alt=""></a>
         <button class="navbar-toggler text-light" 
         type="button" 
         data-bs-toggle="collapse" 
@@ -65,7 +66,7 @@ $citas = $controller->index();
             <li class="barra nav-item p-3"><a class="nav-link text-white" href="#">Agenda de Citas</a></li>
             <li class="barra nav-item p-3"><a class="nav-link text-white" href="/contenido.php">Contenido</a></li>
           </ul>
-          <button class=" btn btn-light nav-item" id="citas"> <a class="nav-link" href="/index.php"><i class="bi bi-box-arrow-right"></i></a></button>
+          <button class=" btn btn-shine nav-item" > <a class="nav-link" href="/index.php"><i class="bi bi-box-arrow-right"></i></a></button>
         </div>
       </div>
     </nav>
@@ -300,10 +301,10 @@ $citas = $controller->index();
           <div class="vr d-none d-md-block" style="height: 100px;"></div>
           
           <div class="col-auto">
-            <a href="#" class="text-decoration-none text-white"><p><img src="/Imagenes/whatsapp.png" alt="whatsapp" width="20px" class="mx-2">Tel. 55 1774 6761</p></a> 
-            <a href="#" class="text-decoration-none text-white"><p><img src="/Imagenes/instagram.png" alt="instagram" width="20px" class="mx-2">jglam_studio</p></a>
-            <a href="#" class="text-decoration-none text-white"><p><img src="/Imagenes/facebook.png" alt="facebook" width="20px" class="mx-2">J&Glam Studio</p></a>
-          </div>
+          <a href="https://wa.me/5517746761?text=Hola" class="text-decoration-none text-white"><p><img src="Imagenes/whatsapp.png" alt="whatsapp" width="20px" class="mx-2">Tel. 55 1774 6761</p></a> 
+          <a href="https://www.instagram.com/jglam_studio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-decoration-none text-white"><p><img src="Imagenes/instagram.png" alt="instagram" width="20px" class="mx-2">jglam_studio</p></a>
+          <a href="https://www.facebook.com/profile.php?id=61579641932700&sk=about" class="text-decoration-none text-white"><p><img src="Imagenes/facebook.png" alt="facebook" width="20px" class="mx-2">J&Glam Studio</p></a>
+        </div>
         </div>
       </div>
     </footer>
