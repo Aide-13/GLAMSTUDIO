@@ -217,5 +217,6 @@ $promos = $conn->query("
 <script src="js/bootstrap.bundle.js"></script>
 <script src="js/modal_promocion.js"></script>
 <script src="js/foot.js"></script>
+<script src="js/animacion.js"></script>
 </body>
 </html>

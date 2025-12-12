@@ -279,3 +279,57 @@ body {
     height: auto;
   }
 }
+
+.glam-divider {
+  width: 120px;
+  height: 3px;
+  margin: 25px auto;
+  background: linear-gradient(90deg, transparent, #c6a04f, transparent);
+  animation: glowLine 2s ease-in-out infinite alternate;
+}
+
+@keyframes glowLine {
+  from { opacity: .4; }
+  to { opacity: 1; }
+}
+
+
+.circle img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 50%;
+}
+
+.circle img:hover {
+  box-shadow: 0 0 18px rgba(198,160,79,0.6);
+}
+
+.circle img.active {
+  transform: scale(1.15);
+  box-shadow: 0 0 25px rgba(198,160,79,0.9);
+}
+
+.descripcion li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.descripcion li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  color: #c6a04f;
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .manos:hover,
+  .uñas_final:hover {
+    transform: none;
+  }
+
+  .glam-divider {
+    width: 80px;
+  }
+}

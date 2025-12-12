@@ -26,3 +26,15 @@ const botones = document.querySelectorAll('#grupoTamanos button');
       imagen.src = boton.getAttribute('data-img');
     });
   });
+
+  /* ===== FADE AL SCROLL ===== */
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll(".fade-section").forEach(el => observer.observe(el));
+
