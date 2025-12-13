@@ -13,6 +13,9 @@ $promos = $conn->query("
   <meta name="google-site-verification" content="5aOCZBopG_tZdllzD0cLEu7EG7iOpQvFFu80vbyahxU" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="J&G GlamStudio – Estudio de belleza especializado en uñas, cejas, pestañas, pedicura y extensiones. Tu belleza, nuestro arte.">
+  <meta name="keywords" content="manicura, pedicura, uñas acrílicas, cejas, pestañas, glam studio">
+  <meta name="author" content="J&G GlamStudio">
   <link rel="icon" href="Imagenes/icono.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,6 +32,15 @@ $promos = $conn->query("
   <title>J&G GLAMSTUDIO - Inicio</title>
 </head>
 <body>
+
+<!-- Loader -->
+<div id="loader">
+  <div class="loader-content">
+    <img src="Imagenes/logo.png" alt="J&G GlamStudio">
+    <span>J&G GlamStudio</span>
+  </div>
+</div>
+
   
   <nav class="navbar navbar-expand-lg navbar-primary  fixed-top">
     <div class="container-fluid">

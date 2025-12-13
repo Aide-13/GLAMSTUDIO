@@ -122,3 +122,46 @@
     transform: none;
   }
 }
+
+
+
+#loader {
+  position: fixed;
+  inset: 0;
+  background: #171614;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.loader-content {
+  text-align: center;
+  color: #c8a451;
+  animation: pulse 1.8s ease-in-out infinite;
+}
+
+.loader-content img {
+  width: 90px;
+  margin-bottom: 15px;
+}
+
+.loader-content span {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 3px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.4; transform: scale(0.98); }
+  50% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0.4; transform: scale(0.98); }
+}
+
+#loader.hide {
+  opacity: 0;
+  visibility: hidden;
+}

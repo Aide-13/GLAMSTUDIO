@@ -16,3 +16,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   observer.observe(footer);
 });
+
+
+
+window.addEventListener('load', () => {
+  const loader = document.getElementById('loader');
+  loader.classList.add('hide');
+
+  setTimeout(() => {
+    loader.remove();
+  }, 600);
+});

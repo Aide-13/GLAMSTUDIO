@@ -90,6 +90,7 @@ $promos = $conn->query("SELECT * FROM promociones ORDER BY creado DESC");
     <title>J&G GLAMSTUDIO - Contenido</title>
 </head>
 <body>
+  
     <nav class="navbar navbar-expand-lg navbar-primary  fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.php"><img src="Imagenes/logo.png" width="45px" alt=""></a>
