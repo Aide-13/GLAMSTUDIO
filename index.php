@@ -26,7 +26,7 @@ $promos = $conn->query("
   <link rel="stylesheet" href="css/style_index.css">
   <link rel="stylesheet" href="css/whatsapp.css">
   <link rel="stylesheet" href="css/boton_shine.css">
-  <title>J&G GLAMSTUDIO - Inicio</title>
+  <title>JANN GLAMSTUDIO - Inicio</title>
 </head>
 <body>
 
@@ -34,7 +34,7 @@ $promos = $conn->query("
 <div id="loader">
   <div class="loader-content">
     <img src="Imagenes/logo.png" alt="J&G GlamStudio">
-    <span>J&G GlamStudio</span>
+    <span>Jann GlamStudio</span>
   </div>
 </div>
 
@@ -70,7 +70,7 @@ $promos = $conn->query("
       </div>
       <div class="col-7 text-white text-center p-0 mt-5">
         <div class="col">
-          <p class="texto_1">J <span class="texto_2">&</span> G</p>
+          <p class="texto_1">JANN</p>
         </div>
         <div class="col titulo " >
           <p class="m-0">GLAM STUDIO</p>
