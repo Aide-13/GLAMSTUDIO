@@ -1,4 +1,4 @@
-// --- Carrusel de pestañas ---
+
 function selectImagePestanas(element) {
   const centerImage = document.getElementById("centerImagePestanas");
   const title = document.getElementById("imageTitlePestanas");
@@ -12,7 +12,6 @@ function selectImagePestanas(element) {
   element.classList.add("selected");
 }
 
-// --- Carrusel de cejas ---
 function selectImageCejas(element) {
   const centerImage = document.getElementById("centerImageCejas");
   const title = document.getElementById("imageTitleCejas");
@@ -26,7 +25,11 @@ function selectImageCejas(element) {
   document.querySelectorAll(".circle .item").forEach(img => img.classList.remove("selected"));
   element.classList.add("selected");
 
-  // 👁️ Efecto de parpadeo breve al seleccionar
   eye.classList.add("blink");
   setTimeout(() => eye.classList.remove("blink"), 300);
 }
+
+const elemento = document.querySelector('.pestanas');
+const descripcion = document.querySelector('#descripcion');
+
+descripcion.innerHTML = elemento.dataset.desc;

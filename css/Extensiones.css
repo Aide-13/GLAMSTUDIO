@@ -120,6 +120,12 @@ body {
   background-color: #c5a03f;
 }
 
+.titulo23{
+    font-family: "Playfair Display", serif;
+    font-size: 80px;
+    font-weight: bold;
+}
+
 .circle img:nth-child(1) { top: -10%; left: 50%; transform: translateX(-50%);}
 .circle img:nth-child(2) { top: 50%; right: -10%; transform: translateY(-50%);}
 .circle img:nth-child(3) { bottom: -10%; left: 50%; transform: translateX(-50%);}

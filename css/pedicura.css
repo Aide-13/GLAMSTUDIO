@@ -50,6 +50,12 @@ wbody {
   text-align: justify;
 }
 
+.titulo23{
+    font-family: "Playfair Display", serif;
+    font-size: 80px;
+    font-weight: bold;
+}
+
 .carta{
     background: #f4f4f4;
 }
