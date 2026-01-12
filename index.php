@@ -33,8 +33,8 @@ $promos = $conn->query("
 <!-- Loader -->
 <div id="loader">
   <div class="loader-content">
-    <img src="Imagenes/logo.png" alt="J&G GlamStudio">
-    <span>Jann GlamStudio</span>
+    <img src="Imagenes/logo.png" alt="JANN GlamStudio">
+    <span>JANN GlamStudio</span>
   </div>
 </div>
 
@@ -89,7 +89,7 @@ $promos = $conn->query("
         <p class="subtitulo_1">GlamStudio: donde comienza <br> tu transformación</p>
         <p class="texto_4 mt-md-4">Descubre un lugar donde cada detalle importa y cada estilo 
           cuenta. Te invitamos a explorar nuestra página, conocer nuestros servicios y 
-          dejarte inspirar por el encanto de J&G GlamStudio, donde la belleza se 
+          dejarte inspirar por el encanto de JANN GlamStudio, donde la belleza se 
           convierte en arte.
         </p>
       </div>
@@ -97,7 +97,7 @@ $promos = $conn->query("
         <p class="subtitulo_2">GlamStudio: donde comienza <br> tu transformación</p>
         <p class="texto_42 mt-md-4">Descubre un lugar donde cada detalle importa y cada estilo 
           cuenta. Te invitamos a explorar nuestra página, conocer nuestros servicios y 
-          dejarte inspirar por el encanto de J&G GlamStudio, donde la belleza se 
+          dejarte inspirar por el encanto de JANN GlamStudio, donde la belleza se 
           convierte en arte.
         </p>
       </div>
@@ -198,7 +198,7 @@ $promos = $conn->query("
       <div class="d-flex justify-content-evenly flex-wrap">
         <div class="col-auto">
           <img src="Imagenes/icono.png" alt="logo" width="100px">
-          <a href="#" class="text-decoration-none fw-bold" style="color: #C6A04F;">J&G GLAMSTUDIO</a>
+          <a href="#" class="text-decoration-none fw-bold" style="color: #C6A04F;">JANN GLAMSTUDIO</a>
         </div>
         <div class="vr d-none d-md-block" style="height: 100px;"></div>
         <div class="col-auto text-center">
@@ -216,7 +216,7 @@ $promos = $conn->query("
         <div class="col-auto">
           <a href="https://wa.me/5517746761?text=Hola" class="text-decoration-none text-white"><p><img src="Imagenes/whatsapp.png" alt="whatsapp" width="20px" class="mx-2">Tel. 55 1774 6761</p></a> 
           <a href="https://www.instagram.com/jglam_studio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-decoration-none text-white"><p><img src="Imagenes/instagram.png" alt="instagram" width="20px" class="mx-2">jglam_studio</p></a>
-          <a href="https://www.facebook.com/profile.php?id=61579641932700&sk=about" class="text-decoration-none text-white"><p><img src="Imagenes/facebook.png" alt="facebook" width="20px" class="mx-2">J&Glam Studio</p></a>
+          <a href="https://www.facebook.com/profile.php?id=61579641932700&sk=about" class="text-decoration-none text-white"><p><img src="Imagenes/facebook.png" alt="facebook" width="20px" class="mx-2">JANNlam Studio</p></a>
         </div>
       </div>
     </div>

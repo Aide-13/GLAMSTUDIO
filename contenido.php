@@ -87,7 +87,7 @@ $promos = $conn->query("SELECT * FROM promociones ORDER BY creado DESC");
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style._contenido.css">
     <link rel="stylesheet" href="css/boton_shine.css">
-    <title>J&G GLAMSTUDIO - Contenido</title>
+    <title>JANN GLAMSTUDIO - Contenido</title>
 </head>
 <body>
   
@@ -344,7 +344,7 @@ while ($v = $promos->fetch_assoc()):
           
             <div class="col-auto">
             <img src="Imagenes/logo.png" alt="logo" width="100px">
-            <a href="#" class="text-decoration-none text-white fw-bold">J&G GLAMSTUDIO</a>
+            <a href="#" class="text-decoration-none text-white fw-bold">JANN GLAMSTUDIO</a>
             </div>
           
           <div class="vr d-none d-md-block" style="height: 100px;"></div>
@@ -365,7 +365,7 @@ while ($v = $promos->fetch_assoc()):
           <div class="col-auto">
           <a href="https://wa.me/5517746761?text=Hola" class="text-decoration-none text-white"><p><img src="Imagenes/whatsapp.png" alt="whatsapp" width="20px" class="mx-2">Tel. 55 1774 6761</p></a> 
           <a href="https://www.instagram.com/jglam_studio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-decoration-none text-white"><p><img src="Imagenes/instagram.png" alt="instagram" width="20px" class="mx-2">jglam_studio</p></a>
-          <a href="https://www.facebook.com/profile.php?id=61579641932700&sk=about" class="text-decoration-none text-white"><p><img src="Imagenes/facebook.png" alt="facebook" width="20px" class="mx-2">J&Glam Studio</p></a>
+          <a href="https://www.facebook.com/profile.php?id=61579641932700&sk=about" class="text-decoration-none text-white"><p><img src="Imagenes/facebook.png" alt="facebook" width="20px" class="mx-2">JANNlam Studio</p></a>
         </div>
         </div>
       </div>
